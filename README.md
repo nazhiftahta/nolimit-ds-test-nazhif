@@ -15,11 +15,14 @@ The pipeline also uses embeddings for representation/search, as required by the 
 
 ## Dataset
 
-Dataset: **IndoNLU SmSA** sentiment analysis dataset.
+Dataset: **ID-SMSA: Indonesian Stock Market Dataset for Sentiment Analysis**.
 
 Source:
-- Hugging Face dataset: `indonlp/indonlu`, subset `smsa`
-- Reference dataset source: https://github.com/crypter70/Sentiment-Analysis-with-IndoBERT-Fine-tuning-and-IndoNLU-SmSA-Dataset
+- Mendeley Data: https://data.mendeley.com/datasets/tn4vzs8tdw/3
+- DOI: `10.17632/tn4vzs8tdw.3`
+- Citation: Hartanto, Jason; Liundi, Timothy; Sutoyo, Rhio (2025), "ID-SMSA: Indonesian Stock Market Dataset for Sentiment Analysis", Mendeley Data, V3.
+
+The dataset was previously commonly accessed through the Hugging Face `indonlp/indonlu` dataset collection. At the time this project was prepared, that source was no longer directly downloadable in the working environment, so the dataset was obtained from the Mendeley Data release above.
 
 Local CSV splits are included under `data/`:
 - `data/train.csv`
@@ -32,7 +35,7 @@ Dataset labels are mapped as:
 - `1`: `NEUTRAL`
 - `2`: `NEGATIVE`
 
-License note: the dataset follows the upstream IndoNLU/Hugging Face dataset terms. Please refer to the upstream dataset card or repository for the exact license text.
+License: the Mendeley Data release is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
 ## Models
 
@@ -201,7 +204,9 @@ The selected model directory must include model weights, such as `model.safetens
 
 ## License
 
-This repository includes a local `LICENSE.txt`. Model and dataset assets follow their respective upstream licenses:
+This repository includes a local `LICENSE.txt` for the code in this project. Model and dataset assets follow their respective upstream licenses:
 - IndoBERT: https://huggingface.co/indobenchmark/indobert-base-p1
 - Sentence-Transformers model: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
-- IndoNLU SmSA dataset: upstream IndoNLU/Hugging Face dataset terms
+- Dataset: ID-SMSA on Mendeley Data, licensed under **CC BY 4.0**: https://data.mendeley.com/datasets/tn4vzs8tdw/3
+
+Under CC BY 4.0, the dataset may be shared and adapted as long as appropriate credit is given, a link to the license is provided, and changes are indicated. This use does not imply endorsement by the dataset rights holder.
