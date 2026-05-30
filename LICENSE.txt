@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 crypter70
+Copyright (c) 2026 Nazhif Tahta Aunillah
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Dataset and model notice:
+This license applies to the source code in this repository. The dataset and
+pretrained models used by this project are governed by their respective
+upstream licenses. The ID-SMSA dataset from Mendeley Data is licensed under
+Creative Commons Attribution 4.0 International (CC BY 4.0).
