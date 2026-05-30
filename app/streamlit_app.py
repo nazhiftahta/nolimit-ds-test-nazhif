@@ -17,6 +17,7 @@ from src.faiss_retriever import FaissRetriever, build_embeddings
 
 LABELS = {0: "POSITIVE", 1: "NEUTRAL", 2: "NEGATIVE"}
 MAX_LENGTH = 128
+HF_FINE_TUNED_MODEL = "sovrncrypt/indobert-smsa-nolimit-ds-test"
 
 
 def has_model_weights(path: Path) -> bool:
@@ -29,7 +30,7 @@ FINE_TUNED_MODEL_CANDIDATES = [
 ]
 DEFAULT_MODEL_CHECKPOINT = next(
     (str(path) for path in FINE_TUNED_MODEL_CANDIDATES if path.exists() and has_model_weights(path)),
-    "indobenchmark/indobert-base-p1",
+    HF_FINE_TUNED_MODEL,
 )
 
 st.set_page_config(page_title="IndoBERT Sentiment + FAISS", layout="wide")
@@ -56,7 +57,7 @@ with st.sidebar:
 if model_checkpoint == "indobenchmark/indobert-base-p1":
     st.warning(
         "You are using the base IndoBERT checkpoint. For sentiment predictions, use a fine-tuned "
-        "model directory such as outputs/indobert-sm-sa or outputs/indobert-sm-sa-notebook."
+        f"model such as {HF_FINE_TUNED_MODEL}."
     )
 elif Path(model_checkpoint).exists() and not has_model_weights(Path(model_checkpoint)):
     st.error(
