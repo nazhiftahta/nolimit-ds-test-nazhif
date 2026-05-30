@@ -46,7 +46,7 @@ Classification model:
 - `AutoModelForSequenceClassification`
 - 3 output labels
 
-Fine-tuned model:
+My fine-tuned model:
 - Hugging Face Hub: https://huggingface.co/sovrncrypt/indobert-smsa-nolimit-ds-test
 - Model ID: `sovrncrypt/indobert-smsa-nolimit-ds-test`
 
@@ -195,7 +195,7 @@ Run locally:
 streamlit run app/streamlit_app.py
 ```
 
-The deployed app uses the fine-tuned model from Hugging Face Hub by default:
+The deployed app uses my fine-tuned model from Hugging Face Hub by default:
 
 ```text
 sovrncrypt/indobert-smsa-nolimit-ds-test
