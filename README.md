@@ -2,6 +2,8 @@
 
 This repository contains a runnable Indonesian sentiment analysis pipeline built for the NoLimit Data Scientist technical test. The project fine-tunes IndoBERT for 3-class sentiment classification and adds embedding-based similarity search using FAISS.
 
+Live demo: https://nolimit-ds-test-nazhif.streamlit.app/
+
 ## Task
 
 Selected task: **Classification**
@@ -176,6 +178,14 @@ The notebook contains the end-to-end workflow:
 - save the fine-tuned model
 
 ## Run Streamlit App
+
+Live deployed app:
+
+```text
+https://nolimit-ds-test-nazhif.streamlit.app/
+```
+
+Run locally:
 
 ```bash
 streamlit run app/streamlit_app.py
