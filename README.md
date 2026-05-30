@@ -46,6 +46,10 @@ Classification model:
 - `AutoModelForSequenceClassification`
 - 3 output labels
 
+Fine-tuned model:
+- Hugging Face Hub: https://huggingface.co/sovrncrypt/indobert-smsa-nolimit-ds-test
+- Model ID: `sovrncrypt/indobert-smsa-nolimit-ds-test`
+
 Embedding model:
 - `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
 
@@ -191,13 +195,13 @@ Run locally:
 streamlit run app/streamlit_app.py
 ```
 
-For correct sentiment predictions, use a fine-tuned model directory in the sidebar, for example:
+The deployed app uses the fine-tuned model from Hugging Face Hub by default:
 
 ```text
-outputs/indobert-sm-sa
+sovrncrypt/indobert-smsa-nolimit-ds-test
 ```
 
-or:
+For local experiments, you can also use a downloaded fine-tuned model directory, for example:
 
 ```text
 outputs/indobert-sm-sa-notebook
@@ -207,7 +211,7 @@ The selected model directory must include model weights, such as `model.safetens
 
 ## Notes for Reviewers
 
-- The fine-tuned model checkpoint is not committed because model weight files are large.
+- The fine-tuned model checkpoint is hosted on Hugging Face Hub because model weight files are large.
 - The notebook contains the task-specific results and example outputs.
 - `data/sample_input.csv` is included for local verification.
 - `docs/flowchart.png` documents the end-to-end pipeline.
