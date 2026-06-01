@@ -1,4 +1,4 @@
-# IndoBERT Sentiment Analysis + FAISS Retrieval
+# **Indonesian NLP Sentiment Analysis & Semantic Retrieval System**
 
 This repository contains a runnable Indonesian sentiment analysis pipeline built for the NoLimit Data Scientist technical test. The project fine-tunes IndoBERT for 3-class sentiment classification and adds embedding-based similarity search using FAISS.
 
